@@ -73,8 +73,8 @@ func playAgain() bool {
 	errorChecker(err)
 	input := strings.Trim(i, "\n")
 	count := 0
-	for _, num := range answerOption {
-		if num == input {
+	for _, answer := range answerOption {
+		if answer == input {
 			count++
 			break
 		}
